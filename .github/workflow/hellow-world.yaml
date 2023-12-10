@@ -1,4 +1,4 @@
-name : hello world #name of the work flow
+name : hello world !  #name of the work flow
 
 on: [push] # the event is triggers the work flow , when the code is pushed to the repository
 
