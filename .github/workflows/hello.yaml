@@ -6,6 +6,6 @@ jobs:
     build:
         runs-on: ubuntu-latest #the operating system environment that the jobs runs on , in this case we used the ubuntu latest environment
 
-    steps:
-        - name : say hello # name of the steps,its just for readablity
-            run: echo "hello world this" # the command that executed as part of the steps.
+       steps:
+         - name : say hello # name of the steps,its just for readablity
+             run: echo "hello world this" # the command that executed as part of the steps.
