@@ -1,11 +1,14 @@
-name : hello world !  #name of the work flow
+name: hello world  # name of the workflow
 
-on: [push] # the event is triggers the work flow , when the code is pushed to the repository
+on:
+  push:
+    branches:
+      - main  # or the branch you want to trigger the workflow on
 
 jobs:
-    build:
-        runs-on: ubuntu-latest #the operating system environment that the jobs runs on , in this case we used the ubuntu latest environment
+  build:
+    runs-on: ubuntu-latest  # the operating system environment that the job runs on, in this case, we use the ubuntu latest environment
 
-       steps:
-         - name : say hello # name of the steps,its just for readablity
-             run: echo "hello world this" # the command that executed as part of the steps.
+    steps:
+      - name: say hello  # name of the step, just for readability
+        run: echo "hello world this"  # the command that is executed as part of the step
