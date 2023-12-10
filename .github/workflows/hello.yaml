@@ -1,9 +1,7 @@
-name: hello world  # name of the workflow
+name: build  # name of the workflow
 
-on:
-  push:
-    branches:
-      - main  # or the branch you want to trigger the workflow on
+on: [push]
+ 
 
 jobs:
   build:
@@ -11,4 +9,4 @@ jobs:
 
     steps:
       - name: say hello  # name of the step, just for readability
-        run: echo "hello world this"  # the command that is executed as part of the step
+        run: echo "hello world "  # the command that is executed as part of the step
