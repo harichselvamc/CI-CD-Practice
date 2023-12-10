@@ -8,4 +8,4 @@ jobs:
 
     steps:
         - name : say hello # name of the steps,its just for readablity
-            run: echo "hello world" # the command that executed as part of the steps.
+            run: echo "hello world this is 1st" # the command that executed as part of the steps.
